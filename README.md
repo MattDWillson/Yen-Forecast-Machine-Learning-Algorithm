@@ -26,7 +26,7 @@
 <img width="359" alt="Screen Shot 2021-08-04 at 1 39 31 PM" src="https://user-images.githubusercontent.com/83780964/128228315-6b3bcb98-5a5c-41c5-90ae-b196215381b7.png">
 
 # Regression
-# Return Vs. Predicted Returns
+## Return Vs. Predicted Returns
 <img width="368" alt="Screen Shot 2021-08-04 at 1 40 17 PM" src="https://user-images.githubusercontent.com/83780964/128228525-13ed6848-aafc-4064-b952-ff47abe61dcc.png">
 ## In Sample Vs. Out of Sample RMSE
 Out-of-Sample Root Mean Squared Error (RMSE): 0.4154832784856737
