@@ -25,11 +25,15 @@
 ## Garch Model - 5 Day Volatility Forecast 
 <img width="359" alt="Screen Shot 2021-08-04 at 1 39 31 PM" src="https://user-images.githubusercontent.com/83780964/128228315-6b3bcb98-5a5c-41c5-90ae-b196215381b7.png">
 
+## Time Series Conclusion:
+Based on the time series analysis I would not buy the yen now. The models show that volatility will increase in the next 5 days. I would feel confident using the Garch volatility model for trading because the P values are lower than .05 which signifies that it is a good model. However, both the price and returns models have high p values which signifies that they are bad models. Volatility = opportunity so one could profit if they had a better model to predict the short term trajectory of the Yen.
+
 # Regression
 ## Return Vs. Predicted Returns
 <img width="368" alt="Screen Shot 2021-08-04 at 1 40 17 PM" src="https://user-images.githubusercontent.com/83780964/128228525-13ed6848-aafc-4064-b952-ff47abe61dcc.png">
+
+## Regression Analysis:
 ## In Sample Vs. Out of Sample RMSE
 Out-of-Sample Root Mean Squared Error (RMSE): 0.4154832784856737
 In-sample Root Mean Squared Error (RMSE): 0.5963660785073426
-
 In conclusion, the out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case. 
