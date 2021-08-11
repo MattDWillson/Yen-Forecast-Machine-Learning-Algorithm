@@ -26,7 +26,7 @@
 <img width="359" alt="Screen Shot 2021-08-04 at 1 39 31 PM" src="https://user-images.githubusercontent.com/83780964/128228315-6b3bcb98-5a5c-41c5-90ae-b196215381b7.png">
 
 ## Time Series Conclusion:
-Based on the time series analysis I would not buy the yen now. The models show that volatility will increase in the next 5 days. I would feel confident using the Garch volatility model for trading because the P values are lower than .05 which signifies that it is a good model. However, both the price and returns models have high p values which signifies that they are bad models. Volatility = opportunity so one could profit if they had a better model to predict the short term trajectory of the Yen.
+The models show that volatility and price will increase in the next 5 days. I would feel confident using the Garch volatility model for trading because the P values are lower than .05 which signifies that it is a good model. However, both the price and returns models have high p values which signifies that they are bad models. Volatility = opportunity so one could profit if they had a better model to predict the short term trajectory of the Yen.
 
 # Regression
 ## Return Vs. Predicted Returns
