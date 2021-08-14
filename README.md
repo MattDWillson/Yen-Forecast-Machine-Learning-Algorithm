@@ -1,6 +1,37 @@
-# Yen Vs. U.S. Dollar Exchange Rate Predictor
- Tools / languages: JupyterLab, Python, Pandas, Numpy, Matplotlib, sklearn, arch, statsmodels, time series forecasting, linear regression modeling
- 
+# JPY Vs. USD Exchange Rate Predictor
+Tools / languages: JupyterLab, Python, Pandas, Numpy, Matplotlib, sklearn, arch, statsmodels
+The algorithm uses linear regression and time series forecasting to determinne if there is any predicatable behavior for USD-JPY exchange rate futures.
+
+# Regression
+The first part of the linear regression modeling process requires data preparation. After preparing the data we make predictions using the testing data and compare returns vs. predicted returns. 
+
+<img width="368" alt="Screen Shot 2021-08-04 at 1 40 17 PM" src="https://user-images.githubusercontent.com/83780964/128228525-13ed6848-aafc-4064-b952-ff47abe61dcc.png">
+
+Out-of-Sample Root Mean Squared Error (RMSE): 0.4154832784856737
+In-sample Root Mean Squared Error (RMSE): 0.5963660785073426
+In conclusion, the out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case. 
+
+# Time Series - ARMA, ARIMA, GARCH
+Decomposed historical Dollar-Yen exchange rate futures data into noise and trend using the Hodrick Prescott Filter
+
+
+
+
+- Forecasted returns using an ARMA model
+- Forecasted settlement price using an ARIMA model
+- Forecasted volatility using a GARCH model
+- Determined that volatility and price were expected to increase
+
+
+
+
+
+<img width="1072" alt="Screen Shot 2021-08-04 at 1 35 17 PM" src="https://user-images.githubusercontent.com/83780964/128227900-1c50aa8f-cb94-4f44-ad90-ef4f6d572d94.png"
+
+
+     
+
+ Tools / languages: JupyterLab, Python, Pandas, Numpy, Matplotlib, sklearn, arch, statsmodels
 ## Overview 
 - Uses time series forecasting and linear regression modeling to determine whether there is any predictable behavior for Dollar-Yen exchange rate futures
 - Decomposed historical Dollar-Yen exchange rate futures data into noise and trend using the Hodrick Prescott Filter
