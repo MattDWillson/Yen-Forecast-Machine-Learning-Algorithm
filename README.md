@@ -19,6 +19,7 @@ In conclusion, the out-of-sample RMSE is lower than the in-sample RMSE. RMSE is 
 - Forecasted volatility using a GARCH model
 - Determined that volatility and price were expected to increase
 
+## Settle Vs. Trend
 <img width="1072" alt="Screen Shot 2021-08-04 at 1 35 17 PM" src="https://user-images.githubusercontent.com/83780964/128227900-1c50aa8f-cb94-4f44-ad90-ef4f6d572d94.png"
 
 ## Noise
