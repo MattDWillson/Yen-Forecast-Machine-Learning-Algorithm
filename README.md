@@ -12,36 +12,17 @@ In-sample Root Mean Squared Error (RMSE): 0.5963660785073426
 In conclusion, the out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case. 
 
 # Time Series - ARMA, ARIMA, GARCH
-Decomposed historical Dollar-Yen exchange rate futures data into noise and trend using the Hodrick Prescott Filter
 
-
-
-
-- Forecasted returns using an ARMA model
-- Forecasted settlement price using an ARIMA model
-- Forecasted volatility using a GARCH model
-- Determined that volatility and price were expected to increase
-
-
-<img width="1072" alt="Screen Shot 2021-08-04 at 1 35 17 PM" src="https://user-images.githubusercontent.com/83780964/128227900-1c50aa8f-cb94-4f44-ad90-ef4f6d572d94.png"
-
-
-     
-
- Tools / languages: JupyterLab, Python, Pandas, Numpy, Matplotlib, sklearn, arch, statsmodels
-## Overview 
-- Uses time series forecasting and linear regression modeling to determine whether there is any predictable behavior for Dollar-Yen exchange rate futures
 - Decomposed historical Dollar-Yen exchange rate futures data into noise and trend using the Hodrick Prescott Filter
 - Forecasted returns using an ARMA model
 - Forecasted settlement price using an ARIMA model
 - Forecasted volatility using a GARCH model
 - Determined that volatility and price were expected to increase
 
-# Time Series
-## Settle Price Vs. Trend
-<img width="1072" alt="Screen Shot 2021-08-04 at 1 35 17 PM" src="https://user-images.githubusercontent.com/83780964/128227900-1c50aa8f-cb94-4f44-ad90-ef4f6d572d94.png">
+<img width="1072" alt="Screen Shot 2021-08-04 at 1 35 17 PM" src="https://user-images.githubusercontent.com/83780964/128227900-1c50aa8f-cb94-4f44-ad90-ef4f6d572d94.png"
 
-## Noise 
+<img width="1072" alt="Screen Shot 2021-08-04 at 1 35 17 PM" src="https://user-images.githubusercontent.com/83780964/128227900-1c50aa8f-cb94-4f44-ad90-ef4f6d572d94.png">
+## Noise
 <img width="1055" alt="Screen Shot 2021-08-04 at 1 35 30 PM" src="https://user-images.githubusercontent.com/83780964/128227973-59bf88de-c892-4734-9d34-d51e58be1a98.png">
 
 ## ARMA Model - 5 Day Returns Forecast
