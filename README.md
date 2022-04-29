@@ -1,6 +1,7 @@
 # JPY Vs. USD Exchange Rate Predictor
 Tools / languages: JupyterLab, Python, Pandas, Numpy, Matplotlib, sklearn, arch, statsmodels
-The algorithm uses linear regression and time series forecasting to determinne if there is any predicatable behavior for USD-JPY exchange rate futures.
+
+The algorithm uses linear regression and time series forecasting to determine if there is any predicatable behavior for USD-JPY exchange rate futures.
 
 # Regression
 The first part of the linear regression modeling process requires data preparation. After preparing the data we make predictions using the testing data and compare returns vs. predicted returns. 
