@@ -1,29 +1,21 @@
-# JPY Vs. USD Exchange Rate Predictor
-Tools / languages: JupyterLab, Python, Pandas, Numpy, Matplotlib, sklearn, arch, statsmodels
-
-The algorithm uses time series forecasting and linear regression to determine if there is any predicatable behavior for USD-JPY exchange rate futures.
-
 ## Time Series Basics 
-
 Working with time series data requires a return to the basics. Data needs to be sliced and diced at various time frequencies in order to analyze data points as a time series. 
 
 Pandas DateTimeIndex can be used to help with this = df.loc[2019
 
-The Pandas resample function can be used to slice data, once date time index has been created - weekly = df.['close'].resample('W').meean()
+The Pandas resample function can be used to slice data once the date time index has been created,
+weekly = df.['close'].resample('W').mean()
 
 ## Time Series Decomposition
+Seperation of a time series into useful and less useful components. The useful components can be used to observe patterns and to make predictions. 
 
-Seperation of a time series into useful and less useful components. The useful components can be used to observe patterns ad to make predictions. 
-
-## Components of T.S. Decomposition
-
+## Components of Times Series Decomposition
 1) Level: What is the average value of the series?
-2) Trend: Is there a overall direction of movement? 
+2) Trend: Is there an overall direction of movement? 
 3) Periodicity: Do patterns occur in cycles? 
 4) Residual: How much noise exists in the data? 
 
 # Exponentially Weighted Moving Average (EWMA) 
-
 EWMA is an approach used to "denoise" or "smooth" out time series data so that trends and predictions can be made, 
 
 1) EWMA involves calculating the average of the last n prices. 
@@ -32,12 +24,10 @@ EWMA is an approach used to "denoise" or "smooth" out time series data so that t
   - Weighting decreases exponentially for previous prices / time periods 
 3) Requires a past average values to be stored in memory 
 
-EWMA is used to highlight trends and illustrate the price trajectory for an investment 
+EWMA is used to highlight trends and illustrate the price trajectory for an investment.
 
 ## Hodrick Prescott Filter (HP filter)
-
 The HP filter is a mathematic function that seperates a time series into trend and non trend components by filtering out short-term fluctuations and decomposing a into noise and trend. 
-
 <img width="1095" alt="Screen Shot 2022-07-04 at 1 42 06 PM" src="https://user-images.githubusercontent.com/83780964/177199873-260ab579-b716-4d81-803c-63efb01ca6d5.png">
 
 ## Autocorrelation
@@ -56,7 +46,7 @@ Stationarity is important in selecting a time series model because it makes data
 
 ## Autoregressive Models (AR) 
 1) Past values are used to predict future values. 
-2) Therefor assumes the same decree of autocorrelation. 
+2) Therefore assumes the same degree of autocorrelation. 
 3) An ARMA model may have one significant lag, or it may have multiple. 
 
 ## Secondary AR Model 
@@ -67,12 +57,12 @@ An AR model predicts future values based on,
 1) Past values at a specified lag.
 2) The number of significant lags.
 
-## Moving Average Model 
+## Moving Average Models 
 <img width="1093" alt="Screen Shot 2022-07-04 at 1 46 12 PM" src="https://user-images.githubusercontent.com/83780964/177200267-dccf7bab-b9d4-463e-bce5-c1e6ced6a044.png">
-
 - Past errors (plus current errors) are used to predict future values. 
 
-- ARMA combines features of AR and MA models 
+## ARMA Models
+- combines features of AR and MA models 
 - Past values and errors are used to predict future values 
 
 ## ARIMA Model 
@@ -130,23 +120,23 @@ the ‘signal’
 ## Rolling Out of Sample Approach 
 <img width="863" alt="Screen Shot 2022-07-04 at 2 12 29 PM" src="https://user-images.githubusercontent.com/83780964/177202538-2e94582e-fb1f-4431-88b0-6bb999a61f7a.png">
 
+# JPY Vs. USD Exchange Rate Predictor
+Tools / languages: JupyterLab, Python, Pandas, Numpy, Matplotlib, sklearn, arch, statsmodels
 
-# Regression
-The first part of the linear regression modeling process requires data preparation. After preparing the data we make predictions using the testing data and compare returns vs. predicted returns. 
+The algorithm uses time series forecasting and linear regression to determine if there is any predicatable behavior for USD-JPY exchange rate futures.
 
+## Regression 
 <img width="368" alt="Screen Shot 2021-08-04 at 1 40 17 PM" src="https://user-images.githubusercontent.com/83780964/128228525-13ed6848-aafc-4064-b952-ff47abe61dcc.png">
-
 Out-of-Sample Root Mean Squared Error (RMSE): 0.4154832784856737
 In-sample Root Mean Squared Error (RMSE): 0.5963660785073426
-In conclusion, the out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case. 
+The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case. 
 
 # Time Series - ARMA, ARIMA, GARCH
-
-- Decomposed historical Dollar-Yen exchange rate futures data into noise and trend using the Hodrick Prescott Filter
-- Forecasted returns using an ARMA model
-- Forecasted settlement price using an ARIMA model
-- Forecasted volatility using a GARCH model
-- Determined that volatility and price were expected to increase
+- Decomposed historical Dollar-Yen exchange rate futures data into noise and trend using the Hodrick Prescott Filter.
+- Forecasted returns using an ARMA model.
+- Forecasted settlement price using an ARIMA model.
+- Forecasted volatility using a GARCH model.
+- Determined that volatility and price were expected to increase.
 
 ## Settle Vs. Trend
 <img width="1072" alt="Screen Shot 2021-08-04 at 1 35 17 PM" src="https://user-images.githubusercontent.com/83780964/128227900-1c50aa8f-cb94-4f44-ad90-ef4f6d572d94.png"
@@ -163,6 +153,6 @@ In conclusion, the out-of-sample RMSE is lower than the in-sample RMSE. RMSE is 
 ## Garch Model - 5 Day Volatility Forecast 
 <img width="359" alt="Screen Shot 2021-08-04 at 1 39 31 PM" src="https://user-images.githubusercontent.com/83780964/128228315-6b3bcb98-5a5c-41c5-90ae-b196215381b7.png">
 
-## Time Series Conclusion:
+## Conclusion:
 The models show that volatility and price will increase in the next 5 days. I would feel confident using the Garch volatility model for trading because the P values are lower than .05 which signifies that it is a good model. However, both the price and returns models have high p values which signifies that they are bad models. Volatility = opportunity so one could profit if they had a better model to predict the short term trajectory of the Yen.
 
