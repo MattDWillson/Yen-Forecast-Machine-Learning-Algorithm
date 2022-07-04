@@ -127,8 +127,11 @@ The algorithm uses time series forecasting and linear regression to determine if
 
 ## Regression 
 <img width="368" alt="Screen Shot 2021-08-04 at 1 40 17 PM" src="https://user-images.githubusercontent.com/83780964/128228525-13ed6848-aafc-4064-b952-ff47abe61dcc.png">
+
 Out-of-Sample Root Mean Squared Error (RMSE): 0.4154832784856737
+
 In-sample Root Mean Squared Error (RMSE): 0.5963660785073426
+
 The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case. 
 
 # Time Series - ARMA, ARIMA, GARCH
