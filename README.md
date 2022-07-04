@@ -139,10 +139,8 @@ The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower
 - Determined that volatility and price were expected to increase.
 
 ## Settle Vs. Trend
-<img width="1072" alt="Screen Shot 2021-08-04 at 1 35 17 PM" src="https://user-images.githubusercontent.com/83780964/128227900-1c50aa8f-cb94-4f44-ad90-ef4f6d572d94.png"
 
-## Noise
-<img width="1055" alt="Screen Shot 2021-08-04 at 1 35 30 PM" src="https://user-images.githubusercontent.com/83780964/128227973-59bf88de-c892-4734-9d34-d51e58be1a98.png">
+<img width="1072" alt="Screen Shot 2021-08-04 at 1 35 17 PM" src="https://user-images.githubusercontent.com/83780964/128227900-1c50aa8f-cb94-4f44-ad90-ef4f6d572d94.png"
 
 ## ARMA Model - 5 Day Returns Forecast
 <img width="374" alt="Screen Shot 2021-08-04 at 1 35 47 PM" src="https://user-images.githubusercontent.com/83780964/128228051-75319dd5-0d95-4666-901f-e8581582dd7a.png">
