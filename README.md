@@ -1,4 +1,4 @@
-## Time Series Basics 
+# Time Series Basics 
 Working with time series data requires a return to the basics. Data needs to be sliced and diced at various time frequencies in order to analyze data points as a time series. 
 
 Pandas DateTimeIndex can be used to help with this = df.loc[2019
@@ -15,7 +15,7 @@ Seperation of a time series into useful and less useful components. The useful c
 3) Periodicity: Do patterns occur in cycles? 
 4) Residual: How much noise exists in the data? 
 
-# Exponentially Weighted Moving Average (EWMA) 
+## Exponentially Weighted Moving Average (EWMA) 
 EWMA is an approach used to "denoise" or "smooth" out time series data so that trends and predictions can be made, 
 
 1) EWMA involves calculating the average of the last n prices. 
