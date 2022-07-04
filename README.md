@@ -73,28 +73,22 @@ An AR model predicts future values based on,
 - Arima creates differences (^Y) of the data as part of the process. 
 
 ## AIC (AIKaike Information Criterion) and BIC (Bayesian Information Criterion)
-- Assess how well a model fits the data (goodness of fit), and complexity 
-- Higher order models are penalized for complexity 
-- Lower scores are better 
-
-Higher volatility = more risk 
+- Assess how well a model fits the data (goodness of fit), and complexity.
+- Higher order models are penalized for complexity.
+- Lower scores are better. 
 
 ## Diversified Portfolio
+- Higher volatility = more risk
+- Volatility = amount of variance across a time series
 - By understanding the volatility of individual assets (stocks, bonds, etc) a more diversified portfolio can be constructed. 
 - Some assets are particularly volatile e.g. derivatives.
 - Volatility can beget volatility e.g. cluster. 
 
-## GARCH
-Garch models are used to predict volatility. Like ARMA, garch also has auto regressive and moving average components. 
-
-Generalized Autoregressive Conditional Heteroskedacity (GARCH) 
-
-Volatility = amount of variance across a time series
-
-Heteroskadicity = "uneven variance"
+## Generalized Autoregressive Conditional Heteroskedacity (GARCH)
+Garch models are used to predict volatility. Like ARMA, garch also has auto regressive and moving average components. Heteroskadicity means, "uneven variance".
 <img width="600" alt="Screen Shot 2022-07-04 at 1 59 44 PM" src="https://user-images.githubusercontent.com/83780964/177201438-f2c9991a-dc00-4172-b5b7-100915a82bcc.png">
 
-Volatility and returns tend to cluster. GARCH is a model designed to take advantage of that:
+## Volatility and returns tend to cluster. GARCH is a model designed to take advantage of that: 
 <img width="917" alt="Screen Shot 2022-07-04 at 2 01 07 PM" src="https://user-images.githubusercontent.com/83780964/177201578-8cfbc1cf-4480-43f2-8988-5e6e9b393e8a.png">
 
 # Time Series Regression
