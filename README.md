@@ -85,7 +85,10 @@ An AR model predicts future values based on,
 - Volatility can beget volatility e.g. cluster. 
 
 ## Generalized Autoregressive Conditional Heteroskedacity (GARCH)
-Garch models are used to predict volatility. Like ARMA, garch also has auto regressive and moving average components. Heteroskadicity means, "uneven variance".
+Garch models are used to predict volatility. Like ARMA, garch also has auto regressive and moving average components. 
+
+Heteroskadicity means, "uneven variance".
+
 <img width="600" alt="Screen Shot 2022-07-04 at 1 59 44 PM" src="https://user-images.githubusercontent.com/83780964/177201438-f2c9991a-dc00-4172-b5b7-100915a82bcc.png">
 
 ## Volatility and returns tend to cluster. GARCH is a model designed to take advantage of that: 
