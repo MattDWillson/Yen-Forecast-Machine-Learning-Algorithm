@@ -151,5 +151,5 @@ The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower
 <img width="359" alt="Screen Shot 2021-08-04 at 1 39 31 PM" src="https://user-images.githubusercontent.com/83780964/128228315-6b3bcb98-5a5c-41c5-90ae-b196215381b7.png">
 
 ## Conclusion:
-The models show that volatility and price will increase in the next 5 days. I would feel confident using the Garch model for trading because the P values are lower than .05 which signifies that it is a good model. However, both the price and returns models have p values above .05 which signifies that they are unreliable. Volatility = opportunity so one could profit if they had a better model to predict the short term trajectory of the Yen.  Alternatively a trader could look at other indicators correlating to the price of the yen, this would allow a trader to profit, knowing that volaitity is expected to increase. 
+The models show that volatility and price will increase in the next 5 days. I would feel confident using the Garch model for trading because the P values are lower than .05 which signifies that it is a good model. However, both the price and returns models have p values above .05 which signifies that they are unreliable. Volatility = opportunity so one could profit if they had a better model to predict the short term trajectory of the Dollar or Yen.
 
